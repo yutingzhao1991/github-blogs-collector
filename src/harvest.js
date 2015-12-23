@@ -19,6 +19,9 @@ if (process.argv.length < 4) {
 
 var username = process.argv[2]
 var password = process.argv[3]
+// 收割上一周的博客
+var startDate = process.argv[5] || moment().add(-1, 'weeks').startOf('week').format('YYYY-MM-DD')
+var endDate = process.argv[6] || moment().add(-1, 'weeks').endOf('week').format('YYYY-MM-DD')
 
 console.log('start harvest ...')
 harvest()
@@ -33,13 +36,8 @@ function harvest() {
 function getIssuesFromRepo(blogList) {
   // 抓取ISSUES
   var orgReposIndex = _.indexBy(config.orgRepos)
-  
   var newIssues = []
-  // 收割上一周的博客
-  var startDate = process.argv[5] || moment().add(-1, 'weeks').startOf('week').format('YYYY-MM-DD')
-  var endDate = process.argv[6] || moment().add(-1, 'weeks').endOf('week').format('YYYY-MM-DD')
   console.log('get blog which post in ' + startDate + ' - ' + endDate)
-
   for (var index = 0; index < blogList.length; index++) {
     var repo = blogList[index].full_name
     console.log('Start get issues from repo: ' + repo + ' ...')
