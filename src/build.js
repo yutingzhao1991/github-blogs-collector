@@ -73,7 +73,8 @@ function writeResult(list) {
 function filterRepoList(list) {
   // 移除不合法的repo
   var ret = _.filter(list, function(item) {
-    if (item.name == 'blog'
+    if (item.open_issues_count >= 1
+      && item.name == 'blog'
       && config.ignoreRepos.indexOf(item.full_name) == -1) {
       return true
     } else {
