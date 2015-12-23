@@ -20,7 +20,6 @@ if (process.argv.length < 4) {
 var username = process.argv[2]
 var password = process.argv[3]
 
-
 console.log('start harvest ...')
 harvest()
 console.log('done!')
@@ -48,7 +47,7 @@ function getIssuesFromRepo(blogList) {
     var res = request('GET', url, {
       headers: {
         'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
-        'user-agent': config.requestUserAgent
+        'User-Agent': username
       }
     })
     var data = JSON.parse(res.getBody())
@@ -99,7 +98,7 @@ function generateNewBlogs(newIssues, creatIssue) {
     },
     headers: {
       'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
-      'user-agent': config.requestUserAgent
+      'User-Agent': username
     }
   })
   console.log('Created issue done!')

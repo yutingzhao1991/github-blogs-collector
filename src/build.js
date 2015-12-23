@@ -38,7 +38,7 @@ function addExtBlogs(list) {
     var res = request('GET', url, {
       headers: {
         'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
-        'user-agent': config.requestUserAgent
+        'User-Agent': username
       }
     })
     var data = JSON.parse(res.getBody())
@@ -94,7 +94,7 @@ function searchBlogRepoList() {
     var res = request('GET', url, {
       headers: {
         'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
-        'user-agent': config.requestUserAgent
+        'User-Agent': username
       }
     })
     var body = res.getBody()
