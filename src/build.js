@@ -5,7 +5,8 @@
 
 var fs = require('fs')
 var _ = require('underscore')
-var request = require('request')
+// 为了防止请求限制超过github上限，所有请求同步串行发出。同时也让代码更加简单易懂。
+var request = require('sync-request')
 var config = require('../config')
 
 if (process.argv.length < 4) {
@@ -17,53 +18,49 @@ if (process.argv.length < 4) {
 var username = process.argv[2]
 var password = process.argv[3]
 
-var list = []
-searchBlogs(1)
+console.log('start build ...')
+build()
+console.log('done!')
 
-// Search blogs from github,
-// Api: https://developer.github.com/v3/search/#search-repositories,
-// 为了防止请求限制超过github上限，所有请求串行发出.
-function searchBlogs(page) {
-  console.log('Start get blogs from page: ' + page + ' ...')
-  request.get({
-    url: 'https://api.github.com/search/repositories?q=blog+in:name+stars:>=' + config.minRequiredStarCount + '&order=desc&page=' + page,
-    auth: {
-      user: username,
-      pass: password
-    },
-    headers: {
-      'User-Agent': 'request'
-    }
-  }, function (err, response, body) {
-    if (!err && response.statusCode == 200) {
-      var data = JSON.parse(body)
-      list = list.concat(data.items)
-      if (data.incomplete_results == true
-        // 超过github的reponse数量限制
-        || list.length >= config.searchResponseMaxCount) {
-        // End search.
-        generateBlogsFromList()
-      } else {
-        // For unauthenticated requests, the rate limit allows you to make up to 10 requests per minute.
-        // See: https://developer.github.com/v3/search/#rate-limit
-        setTimeout(function() {
-          searchBlogs(page + 1)
-        }, 5000)
+function build() {
+  var list = searchBlogRepoList()
+  list = filterRepoList(list)
+  list = addExtBlogs(list)
+  writeResult(list)
+}
+
+function addExtBlogs(list) {
+  // 添加指定的blog的repo，从第0个开始递归添加.
+  for (var i = 0; i < config.extRepos.length; i++) {
+    var fullName = config.extRepos[i]
+    console.log('Get detail of ext repo: ' + fullName)
+    var url = 'https://api.github.com/repos/' + fullName
+    var res = request('GET', url, {
+      headers: {
+        'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
+        'user-agent': config.requestUserAgent
       }
+    })
+    if (res) {
+      var data = JSON.parse(res.getBody())
+      list.push(data)
     } else {
-      console.error(err, response)
+      console.error('request error')
+    }
+  }
+  return list
+}
+
+function writeResult(list) {
+  // 将最后得到的blog列表写入到blog.json和readme
+  var blogs = list.map(function(item) {
+    return {
+      full_name: item.full_name,
+      open_issues_count: item.open_issues_count,
+      html_url: item.html_url,
+      stargazers_count: item.stargazers_count
     }
   })
-}
-
-function generateBlogsFromList() {
-  // 移除非blog的repo.
-  removeIgnoreRepos()
-  // 添加指定的blog的repo，从第0个开始递归添加.
-  appendExtRepos(0)
-}
-
-function writeBlogListToReadme(blogs) {
   console.log('writing to readme ...')
   blogs.sort(function(a, b) {
     return b.stargazers_count - a.stargazers_count
@@ -74,53 +71,47 @@ function writeBlogListToReadme(blogs) {
     blogs: blogs
   }))
   fs.writeFileSync(__dirname + '/../blogs.json', JSON.stringify(blogs))
-  fs.writeFileSync(__dirname + '/../README.md', md)
+  fs.writeFileSync(__dirname + '/../README.md', md) 
 }
 
-function removeIgnoreRepos() {
-  list = _.filter(list, function(item) {
-    if (item.open_issues_count >= 1
-      && item.name == 'blog'
+function filterRepoList(list) {
+  // 移除不合法的repo
+  var ret = _.filter(list, function(item) {
+    if (item.name == 'blog'
       && config.ignoreRepos.indexOf(item.full_name) == -1) {
       return true
     } else {
       return false
     }
   })
+  return ret
 }
 
-function appendExtRepos(index) {
-  if (config.extRepos.length <= index) {
-    // 所有指定的repo都添加完毕到list中，最后写入结果到readme和blogs.json.
-    var blogs = list.map(function(item) {
-      return {
-        full_name: item.full_name,
-        open_issues_count: item.open_issues_count,
-        html_url: item.html_url,
-        stargazers_count: item.stargazers_count
-      }
-    })
-    writeBlogListToReadme(blogs)
-  } else {
-    var fullName = config.extRepos[index]
-    console.log('Get detail of ext repo: ' + fullName)
-    request.get({
-      url: 'https://api.github.com/repos/' + fullName,
-      auth: {
-        user: username,
-        pass: password
-      },
+function searchBlogRepoList() {
+  var list = []
+  // 调用github的搜索repo的接口查找符合规则的repo
+  var pageCount = 0
+  while(list.length < config.searchResponseMaxCount) {
+    pageCount ++
+    console.log('Start get blogs from page: ' + pageCount + ' ...')
+    var url = 'https://api.github.com/search/repositories?q=blog+in:name+stars:>=' + config.minRequiredStarCount + '&order=desc&page=' + pageCount
+    var res = request('GET', url, {
       headers: {
-        'User-Agent': 'request'
-      }
-    }, function (err, response, body) {
-      if (!err && response.statusCode == 200) {
-        var data = JSON.parse(body)
-        list.push(data)
-        appendExtRepos(index + 1)
-      } else {
-        console.error(err, response)
+        'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
+        'user-agent': config.requestUserAgent
       }
     })
+    if (res) {
+      var body = res.getBody()
+      var data = JSON.parse(body)
+      list = list.concat(data.items)
+      if (data.incomplete_results == true) {
+        // 已经查找到最后
+        break
+      }
+    } else {
+      console.error('request error')
+    }
   }
+  return list
 }

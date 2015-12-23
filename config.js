@@ -3,6 +3,7 @@
 module.exports = {
   'minRequiredStarCount': 5, // 收录到博客列表中的最小star数目要求
   'searchResponseMaxCount': 1000, // 自动收录博客时的最大搜索限制
+  'requestUserAgent': 'github-project-github-blogs-collector', // 请求 github api 时使用的 ua
 
   'weeklyReminderName': 'github-blogs-weekly', // 发布周更新的repo名称
   'reminderIssuesLabel': 'Articles', // 发布更新Issue时添加的label

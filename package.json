@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "moment": "~2.10.6",
-    "request": "~2.65.0",
+    "sync-request": "~2.1.0",
     "underscore": "~1.8.3"
   }
 }

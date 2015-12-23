@@ -1,9 +1,9 @@
 GITHUB-BLOGS 收集GITHUB上的博客
 ===
 
-自动收集GITHUB上用ISSUES写的博客，**watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-weekly)就可以获得定期推送**，当前的推送方式是每周日会新建一个[ISSUE](https://github.com/yutingzhao1991/github-blogs-weekly/labels/Articles)将之前一周的更新博客整理到一起。
+自动收集GITHUB上的博客（包括使用ISSUES的和Github-pages的），**watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-weekly) 就可以获得定期推送**，当前的推送方式是每周日会新建一个[ISSUE](https://github.com/yutingzhao1991/github-blogs-weekly/labels/Articles)将之前一周的更新博客整理到一起。
 
-建议watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-weekly)获取博客更新，保证能够获取到更新的同时减少干扰。如果你对某个博客感兴趣，建议star以鼓励作者。
+建议watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-weekly) 获取博客更新，保证能够获取到更新的同时减少干扰。如果你对某个博客感兴趣，建议star以鼓励作者。
 
 收集和更新规则
 ---
@@ -11,10 +11,10 @@ GITHUB-BLOGS 收集GITHUB上的博客
 - repo名称为blog
 - `config.js`的ignoreRepos中的列表会被过滤，extRepos中的列表会被额外补充上，欢迎提pr修改
 - star >= 5
-- open issue 数 >= 1
 - 列表不定期手动更新
-- 作者为本人（可以通过修改配置中的orgRepos忽略该条件）的且字数大于200的会每加入推送列表中
-- 每周日早晨会自动将之前一周的博客整理为一个issue自动发布到本项目中
+- 作者为本人（可以通过修改配置中的orgRepos忽略该条件）的且字数大于200的ISSUE会被加入推送列表中
+- _posts文件夹（基于Github pages + jekyll搭建的博客的默认博客目录）下的md文件也会加入到推送列表中
+- 每周日早晨会自动将之前一周的博客整理为一个issue自动发布到本项目中，因为github api的限制，这Github Pages类的更新是通过文件名来推算更新日期的，ISSUE类的更新时间是按照ISSUE的创建时间
 
 如何贡献代码
 ---
