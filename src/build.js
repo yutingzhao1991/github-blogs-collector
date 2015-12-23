@@ -41,12 +41,8 @@ function addExtBlogs(list) {
         'user-agent': config.requestUserAgent
       }
     })
-    if (res) {
-      var data = JSON.parse(res.getBody())
-      list.push(data)
-    } else {
-      console.error('request error')
-    }
+    var data = JSON.parse(res.getBody())
+    list.push(data)
   }
   return list
 }
@@ -101,16 +97,12 @@ function searchBlogRepoList() {
         'user-agent': config.requestUserAgent
       }
     })
-    if (res) {
-      var body = res.getBody()
-      var data = JSON.parse(body)
-      list = list.concat(data.items)
-      if (data.incomplete_results == true) {
-        // 已经查找到最后
-        break
-      }
-    } else {
-      console.error('request error')
+    var body = res.getBody()
+    var data = JSON.parse(body)
+    list = list.concat(data.items)
+    if (data.incomplete_results == true) {
+      // 已经查找到最后
+      break
     }
   }
   return list
