@@ -8,6 +8,7 @@ var _ = require('underscore')
 // 为了防止请求限制超过github上限，所有请求同步串行发出。同时也让代码更加简单易懂。
 var request = require('sync-request')
 var config = require('../config')
+var commonUtils = require('./common')
 
 if (process.argv.length < 4) {
   console.log(process.argv)
@@ -43,6 +44,7 @@ function addExtBlogs(list) {
     })
     var data = JSON.parse(res.getBody())
     list.push(data)
+    commonUtils.apiRequestSleep()
   }
   return list
 }
@@ -105,6 +107,7 @@ function searchBlogRepoList() {
       // 已经查找到最后
       break
     }
+    commonUtils.apiRequestSleep()
   }
   return list
 }

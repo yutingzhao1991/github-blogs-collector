@@ -13,7 +13,8 @@ module.exports = {
     'hax/hax.github.com',
     'amfe/article',
     'tmallfe/tmallfe.github.io',
-    'baixing/FE-Blog'
+    'baixing/FE-Blog',
+    'kuitos/kuitos.github.io'
   ],
   // 开放性的repo，对该列表中的repo读取更新时会跳过"本人发布"的限制
   'orgRepos': [
