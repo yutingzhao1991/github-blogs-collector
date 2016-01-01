@@ -3,7 +3,7 @@ GITHUB-BLOGS 收集GITHUB上的博客
 
 **watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-weekly) 就可以获得每周推送**
 
-**watching [github-blogs-weekly](https://github.com/yutingzhao1991/github-blogs-daily) 就可以获得每天推送**
+**watching [github-blogs-daily](https://github.com/yutingzhao1991/github-blogs-daily) 就可以获得每天推送**
 
 自动收集GITHUB上用ISSUES写的博客，当前的推送方式是每周日会新建一个[ISSUE](https://github.com/yutingzhao1991/github-blogs-weekly/labels/Articles)将之前一周的更新博客整理到一起。
 
