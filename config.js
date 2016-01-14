@@ -22,7 +22,8 @@ module.exports = {
   'orgRepos': [
     'amfe/article',
     'tmallfe/tmallfe.github.io',
-    'baixing/FE-Blog'
+    'baixing/FE-Blog',
+    'gf-rd/blog'
   ],
   // 忽略的repo，过滤一些符合规则但是却不是目标的repo
   'ignoreRepos': [
