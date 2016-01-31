@@ -58,6 +58,7 @@ function getIssuesFromRepo(blogList) {
       var createdDate = moment(item.created_at).format('YYYY-MM-DD')
       if (createdDate <= endDate
         && createdDate >= startDate
+        && item.body
         && item.body.length > config.minBodyLength) {
         // New one which post at yesterday.
         if (orgReposIndex[repo] || item.user.login == repo.split('/')[0]) {
