@@ -1,6 +1,6 @@
 'use strict';
 
-// Search repos which repo's name match 'blog' and write to blogs.json && README.md.
+// Query blogs detail and write to README.md
 // Usage: node build.js githubusername githubpassword
 
 var fs = require('fs')
@@ -24,17 +24,15 @@ build()
 console.log('done!')
 
 function build() {
-  var list = searchBlogRepoList()
-  list = filterRepoList(list)
-  list = addExtBlogs(list)
-  writeResult(list)
+  var list = generateBlogsInfo(config.repos)
 }
 
-function addExtBlogs(list) {
+function generateBlogsInfo(repos) {
+  var list = []
   // 添加指定的blog的repo，从第0个开始递归添加.
-  for (var i = 0; i < config.extRepos.length; i++) {
-    var fullName = config.extRepos[i]
-    console.log('Get detail of ext repo: ' + fullName)
+  for (var i = 0; i < repos.length; i++) {
+    var fullName = repos[i]
+    console.log('Get detail of repo: ' + fullName)
     var url = 'https://api.github.com/repos/' + fullName
     var res = request('GET', url, {
       headers: {
@@ -44,7 +42,6 @@ function addExtBlogs(list) {
     })
     var data = JSON.parse(res.getBody())
     list.push(data)
-    commonUtils.apiRequestSleep()
   }
   return list
 }
@@ -68,46 +65,5 @@ function writeResult(list) {
   var md = mdHead.replace('{BLOGS_LIST}', _.template(template)({
     blogs: blogs
   }))
-  fs.writeFileSync(__dirname + '/../blogs.json', JSON.stringify(blogs))
   fs.writeFileSync(__dirname + '/../README.md', md) 
-}
-
-function filterRepoList(list) {
-  // 移除不合法的repo
-  var ret = _.filter(list, function(item) {
-    if (item.open_issues_count >= 1
-      && item.name == 'blog'
-      && config.ignoreRepos.indexOf(item.full_name) == -1) {
-      return true
-    } else {
-      return false
-    }
-  })
-  return ret
-}
-
-function searchBlogRepoList() {
-  var list = []
-  // 调用github的搜索repo的接口查找符合规则的repo
-  var pageCount = 0
-  while(list.length < config.searchResponseMaxCount) {
-    pageCount ++
-    console.log('Start get blogs from page: ' + pageCount + ' ...')
-    var url = 'https://api.github.com/search/repositories?q=blog+in:name+stars:>=' + config.minRequiredStarCount + '&order=desc&page=' + pageCount
-    var res = request('GET', url, {
-      headers: {
-        'authorization': 'Basic ' + new Buffer(username + ':' + password, 'ascii').toString('base64'),
-        'User-Agent': username
-      }
-    })
-    var body = res.getBody()
-    var data = JSON.parse(body)
-    list = list.concat(data.items)
-    if (data.incomplete_results == true) {
-      // 已经查找到最后
-      break
-    }
-    commonUtils.apiRequestSleep()
-  }
-  return list
 }

@@ -9,7 +9,7 @@ var moment = require('moment')
 var fs = require('fs')
 var _ = require('underscore')
 var config = require('../config')
-var blogList = require('../blogs.json')
+var blogList = config.repos
 
 console.log('harvest with: ', process.argv)
 if (process.argv.length < 6) {
@@ -43,7 +43,7 @@ function getIssuesFromRepo(blogList) {
   var newIssues = []
   console.log('get blog which post in ' + startDate + ' - ' + endDate)
   for (var index = 0; index < blogList.length; index++) {
-    var repo = blogList[index].full_name
+    var repo = blogList[index]
     console.log('Start get issues from repo: ' + repo + ' ...')
     var url = 'https://api.github.com/repos/' + repo + '/issues?sort=created&direction=desc'
     var res = request('GET', url, {
