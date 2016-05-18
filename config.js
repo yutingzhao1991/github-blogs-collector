@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports = {
-  'minRequiredStarCount': 5, // 收录到博客列表中的最小star数目要求
-  'searchResponseMaxCount': 1000, // 自动收录博客时的最大搜索限制
   'minBodyLength': 200, // 最小字数要求，同时也是概览长度
 
   'weeklyReminderName': 'github-blogs-weekly', // 发布周更新的repo名称
@@ -30,8 +28,6 @@ module.exports = {
     'yisibl/blog',
     'wintercn/blog',
     'camsong/blog',
-    'camsong/blog',
-    'riskers/blog',
     'riskers/blog',
     'coderyi/blog',
     'lukego/blog',
@@ -43,7 +39,6 @@ module.exports = {
     'cnsnake11/blog',
     'nimojs/blog',
     'chyingp/blog',
-    'ant-ued/blog',
     'ant-ued/blog',
     'viktorklang/blog',
     'msurguy/blog',
@@ -57,24 +52,17 @@ module.exports = {
     'classicemi/blog',
     'rccoder/blog',
     'baixing/FE-Blog',
-    'dubuyuye/blog',
     'web2hack/blog',
-    'dubuyuye/blog',
     'bgolub/blog',
-    'ruhoh/blog',
     'ruhoh/blog',
     'ccjr/blog',
     '0x00A/blog',
-    'ccjr/blog',
     'jakubholynet/blog',
-    'jakubholynet/blog',
-    'huangz1990/blog',
     'huangz1990/blog',
     'pixelhandler/blog',
     'ma6174/blog',
     'LearnShare/blog',
     '28harishkumar/blog',
-    'steveklabnik/blog',
     'steveklabnik/blog',
     'ashfurrow/blog',
     'zhiqiang21/blog',

@@ -24,6 +24,7 @@ console.log('done!')
 
 function build() {
   var list = generateBlogsInfo(config.repos)
+  writeResult(list)
 }
 
 function generateBlogsInfo(repos) {
