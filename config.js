@@ -83,7 +83,6 @@ module.exports = {
     'zwhu/blog',
     'alvarto/blog',
     'xieranmaya/blog',
-    'dgiim/blog',
     'ngot/blog',
     'fxhover/blog',
     'techird/blog',
