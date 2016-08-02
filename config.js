@@ -87,7 +87,6 @@ module.exports = {
     'fxhover/blog',
     'techird/blog',
     'siddontang/blog',
-    'lunaryorn/blog',
     'serverfireteam/blog',
     'fperez/blog',
     'aui/blog',
