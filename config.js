@@ -22,7 +22,6 @@ module.exports = {
     'xufei/blog',
     'tmallfe/tmallfe.github.io',
     'cssmagic/blog',
-    'gf-rd/blog',
     'kuitos/kuitos.github.io',
     'livoras/blog',
     'yisibl/blog',
@@ -131,6 +130,7 @@ module.exports = {
     'fightteam/blog',
     'mishe/blog',
     'bholst/blog',
-    'Enome/blog'
+    'Enome/blog',
+    'youngwind/blog'
   ]
 }
