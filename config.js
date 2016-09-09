@@ -131,6 +131,7 @@ module.exports = {
     'mishe/blog',
     'bholst/blog',
     'Enome/blog',
-    'youngwind/blog'
+    'youngwind/blog',
+    'weexteam/article'
   ]
 }
