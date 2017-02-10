@@ -66,7 +66,7 @@ module.exports = {
     'ashfurrow/blog',
     'zhiqiang21/blog',
     'wenzhixin/blog',
-    'huei90/blog',
+    'hueitan/blog',
     'mafintosh/blog',
     'ipfs/blog',
     'ljw1004/blog',
