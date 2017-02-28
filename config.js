@@ -117,7 +117,6 @@ module.exports = {
     'yegor256/blog',
     'tarekziade/blog',
     'ecomfe/blog',
-    'melonHuang/blog',
     'LingyuCoder/blog',
     'TazeTSchnitzel/blog',
     'madewithlove/blog',
