@@ -118,7 +118,6 @@ module.exports = {
     'tarekziade/blog',
     'ecomfe/blog',
     'LingyuCoder/blog',
-    'TazeTSchnitzel/blog',
     'madewithlove/blog',
     'lapwinglabs/blog',
     'coneo/blog',
