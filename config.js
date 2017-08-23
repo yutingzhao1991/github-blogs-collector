@@ -106,7 +106,6 @@ module.exports = {
     'chunpu/blog',
     'qq610540622/blog',
     'arogulin/blog',
-    'Tikitoo/blog',
     'pimcore-extensions/blog',
     'divarvel/blog',
     'yutingzhao1991/blog',
