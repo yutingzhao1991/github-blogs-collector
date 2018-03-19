@@ -36,7 +36,7 @@ module.exports = {
     'bh-lay/blog',
     'dfguo/blog',
     'cnsnake11/blog',
-    'nimojs/blog',
+    'onface/blog',
     'chyingp/blog',
     'ant-ued/blog',
     'viktorklang/blog',
