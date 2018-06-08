@@ -16,141 +16,141 @@ GITHUB-BLOGS 收集GITHUB上的博客
 ---
 
 
-- [fouber/blog(11)](https://github.com/fouber/blog) ✯15063
+- [fouber/blog(12)](https://github.com/fouber/blog) ✯16070
 
-- [amfe/article(41)](https://github.com/amfe/article) ✯6193
+- [amfe/article(29)](https://github.com/amfe/article) ✯6402
 
-- [xufei/blog(33)](https://github.com/xufei/blog) ✯5644
+- [xufei/blog(33)](https://github.com/xufei/blog) ✯5850
 
-- [lifesinger/blog(86)](https://github.com/lifesinger/blog) ✯4274
+- [lifesinger/blog(87)](https://github.com/lifesinger/blog) ✯4482
 
-- [tmallfe/tmallfe.github.io(37)](https://github.com/tmallfe/tmallfe.github.io) ✯3475
+- [tmallfe/tmallfe.github.io(37)](https://github.com/tmallfe/tmallfe.github.io) ✯3552
 
-- [youngwind/blog(112)](https://github.com/youngwind/blog) ✯2544
+- [youngwind/blog(112)](https://github.com/youngwind/blog) ✯3035
 
-- [cssmagic/blog(69)](https://github.com/cssmagic/blog) ✯2140
+- [cssmagic/blog(69)](https://github.com/cssmagic/blog) ✯2231
 
-- [sorrycc/blog(26)](https://github.com/sorrycc/blog) ✯1896
+- [sorrycc/blog(28)](https://github.com/sorrycc/blog) ✯2208
 
-- [livoras/blog(12)](https://github.com/livoras/blog) ✯1870
+- [livoras/blog(13)](https://github.com/livoras/blog) ✯2137
 
-- [camsong/blog(8)](https://github.com/camsong/blog) ✯1643
+- [camsong/blog(8)](https://github.com/camsong/blog) ✯1875
 
-- [lcxfs1991/blog(23)](https://github.com/lcxfs1991/blog) ✯1606
+- [lcxfs1991/blog(23)](https://github.com/lcxfs1991/blog) ✯1704
 
-- [weexteam/article(142)](https://github.com/weexteam/article) ✯1151
+- [weexteam/article(166)](https://github.com/weexteam/article) ✯1197
 
-- [creeperyang/blog(32)](https://github.com/creeperyang/blog) ✯956
+- [creeperyang/blog(33)](https://github.com/creeperyang/blog) ✯1166
 
-- [riskers/blog(25)](https://github.com/riskers/blog) ✯890
+- [riskers/blog(27)](https://github.com/riskers/blog) ✯940
 
-- [kuitos/kuitos.github.io(35)](https://github.com/kuitos/kuitos.github.io) ✯837
+- [xieranmaya/blog(8)](https://github.com/xieranmaya/blog) ✯892
 
-- [xieranmaya/blog(8)](https://github.com/xieranmaya/blog) ✯821
+- [kuitos/kuitos.github.io(36)](https://github.com/kuitos/kuitos.github.io) ✯867
 
-- [atian25/blog(14)](https://github.com/atian25/blog) ✯679
+- [atian25/blog(16)](https://github.com/atian25/blog) ✯792
 
-- [cnsnake11/blog(30)](https://github.com/cnsnake11/blog) ✯621
+- [cnsnake11/blog(30)](https://github.com/cnsnake11/blog) ✯647
 
-- [lukego/blog(23)](https://github.com/lukego/blog) ✯462
+- [wintercn/blog(9)](https://github.com/wintercn/blog) ✯471
 
-- [wintercn/blog(9)](https://github.com/wintercn/blog) ✯456
+- [lukego/blog(23)](https://github.com/lukego/blog) ✯470
 
-- [yisibl/blog(7)](https://github.com/yisibl/blog) ✯449
+- [yisibl/blog(7)](https://github.com/yisibl/blog) ✯451
 
-- [Lucifier129/Lucifier129.github.io(11)](https://github.com/Lucifier129/Lucifier129.github.io) ✯358
+- [rccoder/blog(31)](https://github.com/rccoder/blog) ✯380
 
-- [hax/hax.github.com(39)](https://github.com/hax/hax.github.com) ✯354
+- [Lucifier129/Lucifier129.github.io(12)](https://github.com/Lucifier129/Lucifier129.github.io) ✯377
 
-- [rccoder/blog(30)](https://github.com/rccoder/blog) ✯337
+- [hax/hax.github.com(41)](https://github.com/hax/hax.github.com) ✯368
 
-- [zhiqiang21/blog(42)](https://github.com/zhiqiang21/blog) ✯302
+- [zhiqiang21/blog(42)](https://github.com/zhiqiang21/blog) ✯330
 
-- [bh-lay/blog(2)](https://github.com/bh-lay/blog) ✯280
+- [bh-lay/blog(2)](https://github.com/bh-lay/blog) ✯290
 
-- [onface/blog(12)](https://github.com/onface/blog) ✯276
+- [lmk123/blog(58)](https://github.com/lmk123/blog) ✯287
 
-- [lmk123/blog(49)](https://github.com/lmk123/blog) ✯255
+- [onface/blog(13)](https://github.com/onface/blog) ✯286
 
-- [chyingp/blog(32)](https://github.com/chyingp/blog) ✯243
+- [chyingp/blog(32)](https://github.com/chyingp/blog) ✯263
 
-- [fwon/blog(37)](https://github.com/fwon/blog) ✯241
+- [fwon/blog(37)](https://github.com/fwon/blog) ✯254
 
 - [viktorklang/blog(1)](https://github.com/viktorklang/blog) ✯238
 
-- [mishe/blog(159)](https://github.com/mishe/blog) ✯189
+- [mishe/blog(160)](https://github.com/mishe/blog) ✯196
 
-- [matthew-sun/blog(20)](https://github.com/matthew-sun/blog) ✯185
+- [matthew-sun/blog(20)](https://github.com/matthew-sun/blog) ✯186
 
-- [SimplyY/blog(3)](https://github.com/SimplyY/blog) ✯166
+- [SimplyY/blog(3)](https://github.com/SimplyY/blog) ✯176
 
-- [ant-ued/blog(2)](https://github.com/ant-ued/blog) ✯159
+- [ant-ued/blog(2)](https://github.com/ant-ued/blog) ✯164
 
-- [huangz1990/blog(0)](https://github.com/huangz1990/blog) ✯131
+- [huangz1990/blog(0)](https://github.com/huangz1990/blog) ✯147
 
-- [dfguo/blog(1)](https://github.com/dfguo/blog) ✯130
+- [dfguo/blog(1)](https://github.com/dfguo/blog) ✯131
 
-- [imsobear/blog(0)](https://github.com/imsobear/blog) ✯120
+- [imsobear/blog(0)](https://github.com/imsobear/blog) ✯125
 
-- [YIXUNFE/blog(81)](https://github.com/YIXUNFE/blog) ✯114
+- [YIXUNFE/blog(81)](https://github.com/YIXUNFE/blog) ✯118
 
-- [ma6174/blog(17)](https://github.com/ma6174/blog) ✯100
+- [ma6174/blog(17)](https://github.com/ma6174/blog) ✯108
 
-- [msurguy/blog(2)](https://github.com/msurguy/blog) ✯95
+- [tikonen/blog(1)](https://github.com/tikonen/blog) ✯94
 
-- [tikonen/blog(1)](https://github.com/tikonen/blog) ✯90
+- [msurguy/blog(2)](https://github.com/msurguy/blog) ✯94
 
-- [28harishkumar/blog(7)](https://github.com/28harishkumar/blog) ✯88
+- [28harishkumar/blog(4)](https://github.com/28harishkumar/blog) ✯89
 
-- [enml/blog(5)](https://github.com/enml/blog) ✯87
+- [enml/blog(5)](https://github.com/enml/blog) ✯88
 
-- [BayesianLogic/blog(48)](https://github.com/BayesianLogic/blog) ✯83
+- [fredshare/blog(29)](https://github.com/fredshare/blog) ✯87
 
-- [baixing/FE-Blog(8)](https://github.com/baixing/FE-Blog) ✯82
+- [baixing/FE-Blog(8)](https://github.com/baixing/FE-Blog) ✯87
 
-- [fredshare/blog(29)](https://github.com/fredshare/blog) ✯79
+- [BayesianLogic/blog(48)](https://github.com/BayesianLogic/blog) ✯84
 
-- [0x00A/blog(9)](https://github.com/0x00A/blog) ✯74
+- [niklasfrykholm/blog(7)](https://github.com/niklasfrykholm/blog) ✯75
 
-- [niklasfrykholm/blog(7)](https://github.com/niklasfrykholm/blog) ✯74
+- [hxoht/blog(0)](https://github.com/hxoht/blog) ✯74
 
-- [luqin/blog(15)](https://github.com/luqin/blog) ✯70
+- [luqin/blog(15)](https://github.com/luqin/blog) ✯71
 
-- [zhouwenbin/blog(18)](https://github.com/zhouwenbin/blog) ✯68
+- [zhouwenbin/blog(18)](https://github.com/zhouwenbin/blog) ✯70
 
-- [web2hack/blog(1)](https://github.com/web2hack/blog) ✯62
+- [confidence68/blog(283)](https://github.com/confidence68/blog) ✯65
 
-- [ipfs/blog(35)](https://github.com/ipfs/blog) ✯60
+- [ipfs/blog(38)](https://github.com/ipfs/blog) ✯64
 
-- [confidence68/blog(268)](https://github.com/confidence68/blog) ✯59
+- [web2hack/blog(1)](https://github.com/web2hack/blog) ✯63
 
-- [ashfurrow/blog(2)](https://github.com/ashfurrow/blog) ✯56
-
-- [pivotal/blog(14)](https://github.com/pivotal/blog) ✯54
+- [ashfurrow/blog(1)](https://github.com/ashfurrow/blog) ✯63
 
 - [ljw1004/blog(3)](https://github.com/ljw1004/blog) ✯51
 
+- [zwhu/blog(43)](https://github.com/zwhu/blog) ✯51
+
 - [LearnShare/blog(1)](https://github.com/LearnShare/blog) ✯50
 
-- [serverfireteam/blog(19)](https://github.com/serverfireteam/blog) ✯49
+- [Gaubee/blog(102)](https://github.com/Gaubee/blog) ✯50
+
+- [serverfireteam/blog(20)](https://github.com/serverfireteam/blog) ✯49
+
+- [jollen/blog(24)](https://github.com/jollen/blog) ✯49
 
 - [wenzhixin/blog(6)](https://github.com/wenzhixin/blog) ✯47
 
-- [jollen/blog(21)](https://github.com/jollen/blog) ✯46
-
 - [bgolub/blog(1)](https://github.com/bgolub/blog) ✯45
-
-- [zwhu/blog(39)](https://github.com/zwhu/blog) ✯45
 
 - [ruhoh/blog(10)](https://github.com/ruhoh/blog) ✯44
 
-- [thoughtram/blog(7)](https://github.com/thoughtram/blog) ✯44
+- [thoughtram/blog(7)](https://github.com/thoughtram/blog) ✯43
 
-- [Gaubee/blog(102)](https://github.com/Gaubee/blog) ✯42
-
-- [ccjr/blog(1)](https://github.com/ccjr/blog) ✯42
+- [yegor256/blog(10)](https://github.com/yegor256/blog) ✯42
 
 - [jakubholynet/blog(2)](https://github.com/jakubholynet/blog) ✯41
+
+- [ccjr/blog(1)](https://github.com/ccjr/blog) ✯41
 
 - [mominger/blog(18)](https://github.com/mominger/blog) ✯39
 
@@ -158,79 +158,79 @@ GITHUB-BLOGS 收集GITHUB上的博客
 
 - [pixelhandler/blog(0)](https://github.com/pixelhandler/blog) ✯37
 
+- [techird/blog(2)](https://github.com/techird/blog) ✯37
+
 - [fxhover/blog(0)](https://github.com/fxhover/blog) ✯36
-
-- [yegor256/blog(7)](https://github.com/yegor256/blog) ✯35
-
-- [techird/blog(2)](https://github.com/techird/blog) ✯34
 
 - [steveklabnik/blog(1)](https://github.com/steveklabnik/blog) ✯33
 
 - [alvarto/blog(6)](https://github.com/alvarto/blog) ✯31
 
-- [mafintosh/blog(1)](https://github.com/mafintosh/blog) ✯30
+- [lapwinglabs/blog(2)](https://github.com/lapwinglabs/blog) ✯31
 
-- [lapwinglabs/blog(2)](https://github.com/lapwinglabs/blog) ✯28
+- [nathanleclaire/blog(8)](https://github.com/nathanleclaire/blog) ✯30
 
-- [nathanleclaire/blog(7)](https://github.com/nathanleclaire/blog) ✯28
+- [mafintosh/blog(1)](https://github.com/mafintosh/blog) ✯29
+
+- [yutingzhao1991/blog(5)](https://github.com/yutingzhao1991/blog) ✯26
+
+- [zhaoda/blog(6)](https://github.com/zhaoda/blog) ✯25
 
 - [GitbookIO/blog(3)](https://github.com/GitbookIO/blog) ✯24
 
-- [zhaoda/blog(6)](https://github.com/zhaoda/blog) ✯24
-
-- [yutingzhao1991/blog(5)](https://github.com/yutingzhao1991/blog) ✯24
+- [classicemi/blog(20)](https://github.com/classicemi/blog) ✯23
 
 - [fperez/blog(0)](https://github.com/fperez/blog) ✯21
 
-- [classicemi/blog(20)](https://github.com/classicemi/blog) ✯20
+- [coneo/blog(25)](https://github.com/coneo/blog) ✯20
 
-- [coneo/blog(25)](https://github.com/coneo/blog) ✯19
+- [substack/blog(4)](https://github.com/substack/blog) ✯20
 
-- [nareix/blog(0)](https://github.com/nareix/blog) ✯19
+- [ngot/blog(2)](https://github.com/ngot/blog) ✯20
 
-- [aui/blog(2)](https://github.com/aui/blog) ✯19
-
-- [linxz/blog(2)](https://github.com/linxz/blog) ✯19
-
-- [substack/blog(4)](https://github.com/substack/blog) ✯19
-
-- [Hiufan/blog(19)](https://github.com/Hiufan/blog) ✯19
+- [nareix/blog(0)](https://github.com/nareix/blog) ✯20
 
 - [siddontang/blog(11)](https://github.com/siddontang/blog) ✯19
 
-- [ngot/blog(2)](https://github.com/ngot/blog) ✯18
+- [josef-jelinek/blog(1)](https://github.com/josef-jelinek/blog) ✯19
 
-- [josef-jelinek/blog(1)](https://github.com/josef-jelinek/blog) ✯17
+- [linxz/blog(2)](https://github.com/linxz/blog) ✯19
 
-- [chunpu/blog(70)](https://github.com/chunpu/blog) ✯17
+- [Hiufan/blog(19)](https://github.com/Hiufan/blog) ✯19
 
-- [kerryChen95/blog(9)](https://github.com/kerryChen95/blog) ✯17
+- [aui/blog(2)](https://github.com/aui/blog) ✯19
 
-- [Pearyman/blog(3)](https://github.com/Pearyman/blog) ✯16
+- [chunpu/blog(70)](https://github.com/chunpu/blog) ✯18
+
+- [kerryChen95/blog(9)](https://github.com/kerryChen95/blog) ✯16
+
+- [Pearyman/blog(3)](https://github.com/Pearyman/blog) ✯15
 
 - [qq610540622/blog(2)](https://github.com/qq610540622/blog) ✯15
 
-- [divarvel/blog(0)](https://github.com/divarvel/blog) ✯13
-
-- [woto/blog(2)](https://github.com/woto/blog) ✯13
+- [yikebocai/blog(40)](https://github.com/yikebocai/blog) ✯13
 
 - [arogulin/blog(10)](https://github.com/arogulin/blog) ✯13
 
-- [yikebocai/blog(40)](https://github.com/yikebocai/blog) ✯13
+- [woto/blog(2)](https://github.com/woto/blog) ✯13
 
-- [pimcore-extensions/blog(0)](https://github.com/pimcore-extensions/blog) ✯11
+- [divarvel/blog(0)](https://github.com/divarvel/blog) ✯13
 
 - [amilna/blog(2)](https://github.com/amilna/blog) ✯11
 
-- [madewithlove/blog(5)](https://github.com/madewithlove/blog) ✯10
+- [kengonakajima/blog(0)](https://github.com/kengonakajima/blog) ✯10
+
+- [madewithlove/blog(6)](https://github.com/madewithlove/blog) ✯10
 
 - [strikingly/blog(21)](https://github.com/strikingly/blog) ✯10
 
-- [kengonakajima/blog(0)](https://github.com/kengonakajima/blog) ✯10
+- [pimcore-extensions/blog(0)](https://github.com/pimcore-extensions/blog) ✯10
+
+- [tarekziade/blog(1)](https://github.com/tarekziade/blog) ✯9
 
 - [LingyuCoder/blog(2)](https://github.com/LingyuCoder/blog) ✯9
 
-- [tarekziade/blog(1)](https://github.com/tarekziade/blog) ✯9
+- [p2227/p2227.github.io(18)](https://github.com/p2227/p2227.github.io) ✯9
 
 - [iocanel/blog(0)](https://github.com/iocanel/blog) ✯8
 
@@ -239,6 +239,8 @@ GITHUB-BLOGS 收集GITHUB上的博客
 - [fightteam/blog(1)](https://github.com/fightteam/blog) ✯7
 
 - [Enome/blog(4)](https://github.com/Enome/blog) ✯7
+
+- [pivotal-legacy/blog(14)](https://github.com/pivotal-legacy/blog) ✯7
 
 - [bholst/blog(6)](https://github.com/bholst/blog) ✯6
 
