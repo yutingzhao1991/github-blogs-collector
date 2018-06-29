@@ -55,7 +55,6 @@ module.exports = {
     'bgolub/blog',
     'ruhoh/blog',
     'ccjr/blog',
-    '0x00A/blog',
     'jakubholynet/blog',
     'huangz1990/blog',
     'pixelhandler/blog',
@@ -90,7 +89,6 @@ module.exports = {
     'fperez/blog',
     'aui/blog',
     'nathanleclaire/blog',
-    'pivotal/blog',
     'linxz/blog',
     'confidence68/blog',
     'creeperyang/blog',
@@ -129,6 +127,7 @@ module.exports = {
     'bholst/blog',
     'Enome/blog',
     'youngwind/blog',
-    'weexteam/article'
+    'weexteam/article',
+    'sorrycc/zaobao'
   ]
 }
